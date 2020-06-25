@@ -1,0 +1,18 @@
+<h3> Product List </h3>
+
+<table class="table table-striped" id="productsTable">
+    <thead>
+        <tr>
+            <th scope="col">Product ID</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of productList" appHighlighter>
+            <td scope="row">{{ product.id }} </td>
+            <td scope="row">{{ product.productName }} </td>
+            <td scope="row">{{ product.productPrice }} </td>
+        </tr>   
+    </tbody>
+</table>

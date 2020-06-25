@@ -7,6 +7,7 @@ import { IProduct } from '../shared/interfaces';
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
+
 export class ProductsComponent implements OnInit {
 
   productList: IProduct[] = [
