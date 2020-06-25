@@ -9,7 +9,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let product of productList">
+        <tr *ngFor="let product of productList" appHighlighter>
             <td scope="row">{{ product.id }} </td>
             <td scope="row">{{ product.productName }} </td>
             <td scope="row">{{ product.productPrice }} </td>
