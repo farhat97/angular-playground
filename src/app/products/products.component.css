@@ -3,3 +3,28 @@
     text-align: center;
     width: 78%;
 }
+
+#childContainer
+{
+    float: left; 
+    /* padding-left: 2%;  */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#childOne
+{
+    width: 50%;
+    float: left;
+    background-color: #dae3e8;
+    /* flex: 1; */
+}
+
+#childTwo
+{
+    width: 50%;
+    float: left;
+    background-color: aquamarine;
+    /* flex: 1; */
+}

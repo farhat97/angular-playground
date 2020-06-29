@@ -3,7 +3,17 @@
 <app-productList [productList]="productList"></app-productList>
 
 <h4 style="padding-left: 2%;"> Bellow are the children component </h4>
-<div style="float: left; padding-left: 2%;">
-    <app-pListChildOne (newListOutput)="setNewProductlist($event)" style="width: 50%;"></app-pListChildOne>
-    <app-pListChildTwo style="width: 50%;"></app-pListChildTwo>
+<!-- <div id="childContainer">
+    <div id="childOne">
+        <app-pListChildOne (newListOutput)="setNewProductlist($event)"></app-pListChildOne>
+    </div>
+    <div id="childTwo">
+        <app-pListChildTwo style="float: left;"></app-pListChildTwo>
+    </div>
+</div> -->
+<div id="childOne">
+    <app-pListChildOne (newListOutput)="setNewProductlist($event)"></app-pListChildOne>
+</div>
+<div id="childTwo">
+    <app-pListChildTwo style="float: left;"></app-pListChildTwo>
 </div>

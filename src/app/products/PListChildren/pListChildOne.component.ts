@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 import { IProduct } from '../../shared/interfaces';
+import { MessageService } from '../../shared/message.service';
 
 @Component({
     selector: 'app-pListChildOne',
@@ -8,7 +9,6 @@ import { IProduct } from '../../shared/interfaces';
 })
 
 export class PListChildOne implements OnInit {
-    ngOnInit(): void { }
 
     title = "pListChild 1 title";
 
@@ -21,11 +21,21 @@ export class PListChildOne implements OnInit {
         { id: 5, productName: "Razer Blade", productPrice: "8000" }
     ];
 
-    constructor() { }
+    constructor(private messageService: MessageService) { }
+
+    ngOnInit(): void { 
+        this.messageService.currentMessage.subscribe(m => this.title = m);
+    }
 
     // used to change the product list in productList component
     changeProductList() {
         this.newListOutput.emit(this.newList);
     }
+
+    // test - change child 2 title
+    changeSiblingComponent() {
+        this.messageService.changeMessage("Changed title from pListChild 1");
+    }
+
 
 }

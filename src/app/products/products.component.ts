@@ -21,8 +21,7 @@ export class ProductsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   // used to update product list from child component
   setNewProductlist($event) {
