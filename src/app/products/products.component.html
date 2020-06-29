@@ -4,6 +4,6 @@
 
 <h4 style="padding-left: 2%;"> Bellow are the children component </h4>
 <div style="float: left; padding-left: 2%;">
-    <app-pListChildOne style="width: 50%;"></app-pListChildOne>
+    <app-pListChildOne (newListOutput)="setNewProductlist($event)" style="width: 50%;"></app-pListChildOne>
     <app-pListChildTwo style="width: 50%;"></app-pListChildTwo>
 </div>
