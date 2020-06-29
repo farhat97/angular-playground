@@ -10,6 +10,8 @@ import { IProduct } from '../shared/interfaces';
 
 export class ProductsComponent implements OnInit {
 
+  title = "ProductsComponent";
+
   productList: IProduct[] = [
     { id: 1, productName: "Fender Telecaster", productPrice: "600" },
     { id: 2, productName: "G&L Asat Classic", productPrice: "1000" },

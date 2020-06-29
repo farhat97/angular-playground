@@ -19,6 +19,6 @@ import { HighlighterDirective } from './highlighter.directive';
     ProductsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
